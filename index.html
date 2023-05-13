@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Kumbh Sans', sans-serif;
+      Font-size: 18px;
+      box-sizing: border-box;
+      background-image: url(./images/bg-pattern-top.svg) ,
+       url(./images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat, no-repeat;
+      background-position:right 50vw bottom 50vh, left 50vw top 50vh;
+      background-color: hsl(185, 75%, 39%);
+    }
+    .content{
+      max-width: 1440px;
+  
+    }
+    .img-box{
+      background-image: url(./images/bg-pattern-card.svg);
+      width:100%;
+      height: 130px ;
+      background-size: cover;
+      background-position: center;
+      border-radius: .5rem .5rem 0 0;
+      position: relative;
+    }
+    .card-image img{
+      border-radius: 50%;
+      outline: 5px solid white;
+      width: 90px;
+      height: 90px;
+    }
+    .card-image{
+     position: absolute;
+     top: 90px;
+     left: 110px;
+    }
+    .card{
+      width: 320px;
+      height: 340px;
+      border-radius: 10px;
+      margin:7% auto;
+      background-color: hsl(185, 75%, 39%);
+    }
+    .card-fot{
+      background-color: white;
+      height: 210px;
+      text-align: center;
+      border-radius: 0 0 10px 10px ;
+    }
+    .card-content h1{
+      margin-top: 0;
+      font-size: 1rem;
+      position: relative;
+      top: 70px;
+    }
+    .card-content p{
+      font-size: .8rem;
+      position: relative;
+      top: 60px;
+    }
+    .card-content span{
+      font-size: 1rem;
+      font-weight: 400;
+      color: hsla(227, 10%, 46%,);
+    }
+     .card-footer{
+      border-top: 1px solid hsla(227, 10%, 46%, .3);
+      width: 100%;
+      height: 186px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      top: 65px;
+    }
+    .followers{
+      margin-right:8px;
+      width: 70px;
+      height: 80px;
+    }
+    .follow{
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .card-footer p{
+      font-size: .8rem;
+      margin-top: -10px;
+    }
+    .likes{
+      width: 70px;
+      height: 80px;
+   
+    }
+    .like{
+      margin: 16px 0;
+    }
+  
+    .photos{
+      margin-left: 8px;
+      width: 70px;
+      height: 80px;
+    
+    }
+    .photo{
+      margin: 16px 0;
+    }
+    /* yanlış oldu ikiye bölmek gerekiyordu bunu duzelt  */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="content">
+      <article class="card">
+        <div class="img-box">
+          <div class="card-image">
+            <img src="images/image-victor.jpg" alt="Victor Crest">
+          </div>
+        </div>  
+        <div class="card-fot">
+          <div class="card-content ">
+            <h1>Victor Crest <span>26</span> </h1>
+            <p>London</p>
+            </div>
+            <div class="card-footer ">
+              <div class="followers">
+                <h1 class="follow" >80K</h1>
+                <p>Followers</p>
+              </div>
+              <div class="likes">
+                <h1 class="like" >803K</h1>
+                <p>Likes</p>
+              </div>
+              <div class="photos">
+                <h1 class="photo" >1.4K</h1>
+                <p>Photos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mete Han TOPER</a>.
+  </div>
+</body>
+</html>
